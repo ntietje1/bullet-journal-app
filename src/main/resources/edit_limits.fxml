@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="172.0" prefWidth="398.0">
+      <children>
+         <VBox alignment="TOP_CENTER" layoutX="-2.0" prefHeight="171.0" prefWidth="400.0">
+            <children>
+               <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="200.0">
+                  <VBox.margin>
+                     <Insets left="20.0" right="20.0" top="20.0" />
+                  </VBox.margin>
+                  <children>
+                     <Label text="Task Limit">
+                        <HBox.margin>
+                           <Insets right="20.0" />
+                        </HBox.margin>
+                     </Label>
+                     <TextField fx:id="taskLimit" />
+                  </children>
+               </HBox>
+               <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="200.0">
+                  <children>
+                     <Label text="Event Limit">
+                        <HBox.margin>
+                           <Insets right="20.0" />
+                        </HBox.margin>
+                     </Label>
+                     <TextField fx:id="eventLimit" />
+                  </children>
+                  <VBox.margin>
+                     <Insets left="20.0" right="20.0" />
+                  </VBox.margin>
+               </HBox>
+               <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="200.0">
+                  <VBox.margin>
+                     <Insets left="20.0" right="20.0" />
+                  </VBox.margin>
+                  <children>
+                     <Button fx:id="editButton" mnemonicParsing="false" text="Edit" />
+                  </children>
+               </HBox>
+            </children>
+         </VBox>
+      </children></AnchorPane>
+</Scene>

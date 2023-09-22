@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="564.0" prefWidth="769.0">
+      <children>
+         <HBox fx:id="titleBar" alignment="CENTER_RIGHT" layoutY="-1.0" minHeight="-Infinity" prefHeight="30.0" prefWidth="850.0">
+            <children>
+               <Label fx:id="weekTitle" text="Week Name">
+                  <padding>
+                     <Insets right="10.0" />
+                  </padding>
+                  <font>
+                     <Font size="28.0" />
+                  </font>
+               </Label>
+            </children>
+         </HBox>
+         <HBox fx:id="mainPane" layoutY="34.0" prefHeight="530.0" prefWidth="850.0">
+            <children>
+               <VBox prefHeight="537.0" prefWidth="663.0">
+                  <children>
+                     <HBox prefHeight="70.0" prefWidth="200.0">
+                        <children>
+                           <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                              <children>
+                                 <Button fx:id="newEventButton" mnemonicParsing="false" text="New Event">
+                                    <font>
+                                       <Font size="11.0" />
+                                    </font>
+                                    <HBox.margin>
+                                       <Insets left="5.0" right="5.0" />
+                                    </HBox.margin>
+                                 </Button>
+                                 <Button fx:id="newTaskButton" mnemonicParsing="false" text="New Task">
+                                    <font>
+                                       <Font size="11.0" />
+                                    </font>
+                                    <HBox.margin>
+                                       <Insets left="5.0" right="5.0" />
+                                    </HBox.margin>
+                                 </Button>
+                                 <Button fx:id="saveWeekButton" mnemonicParsing="false" text="Save Week">
+                                    <font>
+                                       <Font size="11.0" />
+                                    </font>
+                                    <HBox.margin>
+                                       <Insets left="5.0" right="5.0" />
+                                    </HBox.margin>
+                                 </Button>
+                                 <Button fx:id="openWeekButton" mnemonicParsing="false" text="Open Week">
+                                    <font>
+                                       <Font size="11.0" />
+                                    </font>
+                                    <HBox.margin>
+                                       <Insets left="5.0" right="5.0" />
+                                    </HBox.margin>
+                                 </Button>
+                                 <Button fx:id="newWeekButton" mnemonicParsing="false" text="New Week">
+                                    <font>
+                                       <Font size="11.0" />
+                                    </font>
+                                    <HBox.margin>
+                                       <Insets left="5.0" right="5.0" />
+                                    </HBox.margin>
+                                 </Button>
+                              </children>
+                           </HBox>
+                           <VBox alignment="CENTER" minWidth="-Infinity" prefHeight="250.0" prefWidth="150.0">
+                              <children>
+                                 <HBox alignment="TOP_CENTER" prefHeight="15.0" prefWidth="225.0">
+                                    <children>
+                                       <Label text="Week Overview" />
+                                    </children>
+                                 </HBox>
+                                 <VBox prefHeight="55.0" prefWidth="100.0">
+                                    <children>
+                                       <Label fx:id="totalEvents" prefHeight="18.0" prefWidth="156.0" text="Total Events = " />
+                                       <Label fx:id="totalTasks" prefHeight="18.0" prefWidth="154.0" text="Total Tasks = " />
+                                       <Label fx:id="tasksCompletes" prefHeight="18.0" prefWidth="144.0" text="Tasks Completed = %" />
+                                    </children>
+                                    <padding>
+                                       <Insets left="5.0" />
+                                    </padding>
+                                 </VBox>
+                              </children>
+                           </VBox>
+                           <VBox prefHeight="150.0" prefWidth="125.0">
+                              <children>
+                                 <HBox alignment="TOP_CENTER" prefHeight="15.0" prefWidth="200.0">
+                                    <children>
+                                       <Label text="Limits" />
+                                    </children>
+                                 </HBox>
+                                 <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                       <Label fx:id="taskLimit" prefHeight="18.0" prefWidth="157.0" text="Task Limit = " />
+                                       <Label fx:id="eventLimit" prefHeight="18.0" prefWidth="168.0" text="Event Limit = " />
+                                    </children>
+                                    <padding>
+                                       <Insets left="5.0" />
+                                    </padding>
+                                 </VBox>
+                              </children>
+                              <HBox.margin>
+                                 <Insets left="5.0" />
+                              </HBox.margin>
+                           </VBox>
+                        </children>
+                     </HBox>
+                     <HBox fx:id="weekView" minHeight="-Infinity" prefHeight="459.0" prefWidth="658.0">
+                        <children>
+                           <VBox prefHeight="456.0" prefWidth="90.0">
+                              <children>
+                                 <VBox alignment="CENTER" prefHeight="20.0" prefWidth="100.0">
+                                    <children>
+                                       <Label text="Monday" />
+                                    </children>
+                                 </VBox>
+                                 <VBox fx:id="monday" minWidth="-Infinity" prefHeight="100000.0" prefWidth="100.0">
+                                    <VBox.margin>
+                                       <Insets bottom="45.0" left="1.0" right="1.0" />
+                                    </VBox.margin>
+                                    <padding>
+                                       <Insets left="1.0" right="1.0" />
+                                    </padding></VBox>
+                              </children>
+                           </VBox>
+                           <VBox prefHeight="200.0" prefWidth="100.0">
+                              <children>
+                                 <VBox alignment="CENTER" prefHeight="20.0" prefWidth="100.0">
+                                    <children>
+                                       <Label text="Tuesday" />
+                                    </children>
+                                 </VBox>
+                                 <VBox fx:id="tuesday" minWidth="-Infinity" prefHeight="10000.0" prefWidth="100.0">
+                                    <VBox.margin>
+                                       <Insets bottom="45.0" left="1.0" right="1.0" />
+                                    </VBox.margin>
+                                    <padding>
+                                       <Insets left="1.0" right="1.0" />
+                                    </padding></VBox>
+                              </children>
+                           </VBox>
+                           <VBox prefHeight="200.0" prefWidth="100.0">
+                              <children>
+                                 <VBox alignment="CENTER" prefHeight="20.0" prefWidth="100.0">
+                                    <children>
+                                       <Label text="Wednesday" />
+                                    </children>
+                                 </VBox>
+                                 <VBox fx:id="wednesday" minWidth="-Infinity" prefHeight="10000.0" prefWidth="100.0">
+                                    <VBox.margin>
+                                       <Insets bottom="45.0" left="1.0" right="1.0" />
+                                    </VBox.margin>
+                                    <padding>
+                                       <Insets left="1.0" right="1.0" />
+                                    </padding></VBox>
+                              </children>
+                           </VBox>
+                           <VBox prefHeight="200.0" prefWidth="100.0">
+                              <children>
+                                 <VBox alignment="CENTER" prefHeight="20.0" prefWidth="100.0">
+                                    <children>
+                                       <Label text="Thursday" />
+                                    </children>
+                                 </VBox>
+                                 <VBox fx:id="thursday" minWidth="-Infinity" prefHeight="10000.0" prefWidth="100.0">
+                                    <VBox.margin>
+                                       <Insets bottom="45.0" left="1.0" right="1.0" />
+                                    </VBox.margin>
+                                    <padding>
+                                       <Insets left="1.0" right="1.0" />
+                                    </padding></VBox>
+                              </children>
+                           </VBox>
+                           <VBox prefHeight="200.0" prefWidth="100.0">
+                              <children>
+                                 <VBox alignment="CENTER" prefHeight="20.0" prefWidth="100.0">
+                                    <children>
+                                       <Label text="Friday" />
+                                    </children>
+                                 </VBox>
+                                 <VBox fx:id="friday" minWidth="-Infinity" prefHeight="10000.0" prefWidth="100.0">
+                                    <VBox.margin>
+                                       <Insets bottom="45.0" left="1.0" right="1.0" />
+                                    </VBox.margin>
+                                    <padding>
+                                       <Insets left="1.0" right="1.0" />
+                                    </padding></VBox>
+                              </children>
+                           </VBox>
+                           <VBox prefHeight="200.0" prefWidth="100.0">
+                              <children>
+                                 <VBox alignment="CENTER" prefHeight="20.0" prefWidth="100.0">
+                                    <children>
+                                       <Label text="Saturday" />
+                                    </children>
+                                 </VBox>
+                                 <VBox fx:id="saturday" minWidth="-Infinity" prefHeight="10000.0" prefWidth="100.0">
+                                    <VBox.margin>
+                                       <Insets bottom="45.0" left="1.0" right="1.0" />
+                                    </VBox.margin>
+                                    <padding>
+                                       <Insets left="1.0" right="1.0" />
+                                    </padding></VBox>
+                              </children>
+                           </VBox>
+                           <VBox prefHeight="200.0" prefWidth="100.0">
+                              <children>
+                                 <VBox alignment="CENTER" prefHeight="20.0" prefWidth="100.0">
+                                    <children>
+                                       <Label text="Sunday" />
+                                    </children>
+                                 </VBox>
+                                 <VBox fx:id="sunday" minWidth="-Infinity" prefHeight="10000.0" prefWidth="100.0">
+                                    <VBox.margin>
+                                       <Insets bottom="45.0" left="1.0" right="1.0" />
+                                    </VBox.margin>
+                                    <padding>
+                                       <Insets left="1.0" right="1.0" />
+                                    </padding></VBox>
+                              </children>
+                           </VBox>
+                        </children>
+                     </HBox>
+                  </children>
+               </VBox>
+               <VBox prefHeight="10000.0" prefWidth="150.0">
+                  <children>
+                     <VBox alignment="CENTER" prefHeight="25.0" prefWidth="100.0">
+                        <children>
+                           <Label text="Task Queue" />
+                        </children>
+                     </VBox>
+                     <VBox fx:id="taskQueue" minWidth="-Infinity" prefHeight="10000.0" prefWidth="100.0">
+                        <VBox.margin>
+                           <Insets bottom="45.0" left="1.0" right="1.0" />
+                        </VBox.margin>
+                        <padding>
+                           <Insets left="1.0" right="1.0" />
+                        </padding></VBox>
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+      </children></AnchorPane>
+</Scene>

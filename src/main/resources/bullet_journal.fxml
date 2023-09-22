@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="543.0" prefWidth="863.0">
+      <children>
+         <TabPane fx:id="tabpane" prefHeight="543.0" prefWidth="863.0" tabClosingPolicy="UNAVAILABLE">
+           <tabs>
+               <Tab fx:id="defaultWeek" text="New Week">
+                 <content>
+                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="863.0" />
+                 </content>
+               </Tab>
+           </tabs>
+         </TabPane>
+      </children></AnchorPane>
+</Scene>
